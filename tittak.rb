@@ -16,7 +16,11 @@ class Tiktak
 	end
   
   def game_draw
-  	@screen.any? { |row|  row.include?('_')  }
+  	temp=@screen.any? { |row|  row.include?('_')  }
+  	if temp==false
+  		puts 'match is draw'
+  	end
+  	return temp
   	
   end
 	def show
